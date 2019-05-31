@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Home_F_1Steps.cs" />
+    <Compile Include="PageObjests\BasePage.cs" />
+    <Compile Include="PageObjests\BrowserDriver.cs" />
     <Compile Include="PageObjests\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
