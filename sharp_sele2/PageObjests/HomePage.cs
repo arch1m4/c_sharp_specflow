@@ -1,6 +1,6 @@
 ﻿using System;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
+
 
 namespace sharp_sele2.PageObjests
 {
@@ -33,12 +33,7 @@ namespace sharp_sele2.PageObjests
                 default:
                     throw new NotImplementedException(string.Format("Menu {0} not supported!", menuName));
             }
-            IWebElement menuElement = driver.FindElement(menu);
-            IWebElement contentPanel = driver.FindElement(HomePageLocator.activeQuickLink);
-            Actions actions = new Actions(driver);
-            actions.MoveToElement(menuElement);
-            actions.Perform();
-            menuElement.Click();
+            driver.FindElement(menu).Click();
         }
 
         // Return the currently active content box WebElement
