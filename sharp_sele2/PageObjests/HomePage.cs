@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Threading;
 using OpenQA.Selenium;
-
+using OpenQA.Selenium.Interactions;
 
 namespace sharp_sele2.PageObjests
 {
@@ -38,7 +39,16 @@ namespace sharp_sele2.PageObjests
 
         // Return the currently active content box WebElement
         public string GetActiveContent() {
-                return driver.FindElement(HomePageLocator.activeQuickLink).Text;
+
+            // demo ****
+            // Scroll down and pause. This is for demo purpose only. Should be removed in production
+            var js = String.Format("window.scrollTo({0}, {1})", 0, 200);
+            IJavaScriptExecutor jse = (IJavaScriptExecutor)driver;
+            jse.ExecuteScript(js);
+            Thread.Sleep(3000);
+            // **** demo ends
+
+            return driver.FindElement(HomePageLocator.activeQuickLink).Text;
             }
 
     }
