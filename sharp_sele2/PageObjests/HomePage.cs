@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
 
 
 namespace sharp_sele2.PageObjests
@@ -23,6 +18,7 @@ namespace sharp_sele2.PageObjests
             homeURL = "https://www.bupa.com.au/";
         }
 
+        // Click the menu with given menu Name
         public void ClickMenu(String menuName)
         {
             By menu = null;
@@ -40,6 +36,7 @@ namespace sharp_sele2.PageObjests
             driver.FindElement(menu).Click();
         }
 
+        // Return the currently active content box WebElement
         public string GetActiveContent() {
                 return driver.FindElement(HomePageLocator.activeQuickLink).Text;
             }

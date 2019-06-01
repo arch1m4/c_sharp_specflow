@@ -1,8 +1,6 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium.Firefox;
 using sharp_sele2.PageObjests;
 using NUnit.Framework;
 

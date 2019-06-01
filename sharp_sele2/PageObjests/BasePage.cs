@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace sharp_sele2.PageObjests
 {
     class BasePage
     {
+        // Variable and functions shared for all pages goes here
+
         protected IWebDriver driver;
         protected String homeURL;
 
