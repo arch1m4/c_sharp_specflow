@@ -16,8 +16,8 @@ namespace sharp_sele2.PageObjests
         {
             IWebDriver driver;
             // Default to Firefox driver
-            var firefoxOptions = new FirefoxOptions;
-            firefoxOptions.AddArguments(new List<string>() { "no-sandbox", "headless", "disable-gpu" });
+            var firefoxOptions = new FirefoxOptions();
+            //firefoxOptions.AddArguments(new List<string>() { "no-sandbox", "headless", "disable-gpu" });
             // FirefoxDriverService FFService = FirefoxDriverService.CreateDefaultService();
             driver = new FirefoxDriver(firefoxOptions);
 
@@ -38,7 +38,7 @@ namespace sharp_sele2.PageObjests
             
 
             // Additional customizations
-            driver.Manage().Window.Size.Window.Maximize();
+            driver.Manage().Window.Maximize();
             return driver;
         }
     }
