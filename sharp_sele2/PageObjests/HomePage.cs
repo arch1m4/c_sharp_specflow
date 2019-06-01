@@ -36,7 +36,7 @@ namespace sharp_sele2.PageObjests
             IWebElement menuElement = driver.FindElement(menu);
             IWebElement contentPanel = driver.FindElement(HomePageLocator.activeQuickLink);
             Actions actions = new Actions(driver);
-            actions.MoveToElement(contentPanel);
+            actions.MoveToElement(menuElement);
             actions.Perform();
             menuElement.Click();
         }
