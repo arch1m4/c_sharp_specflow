@@ -3,6 +3,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 // TODO: Move this class out of PageObjects directory
@@ -15,8 +16,10 @@ namespace sharp_sele2.PageObjests
         {
             IWebDriver driver;
             // Default to Firefox driver
-            FirefoxDriverService FFService = FirefoxDriverService.CreateDefaultService();
-            driver = new FirefoxDriver(FFService);
+            var firefoxOptions = new FirefoxOptions;
+            firefoxOptions.AddArguments(new List<string>() { "no-sandbox", "headless", "disable-gpu" });
+            // FirefoxDriverService FFService = FirefoxDriverService.CreateDefaultService();
+            driver = new FirefoxDriver(firefoxOptions);
 
             // Get environment varaible for browser type
             String driverType = System.Environment.GetEnvironmentVariable("SELENIUM_DRIVER_TYPE");
@@ -35,7 +38,7 @@ namespace sharp_sele2.PageObjests
             
 
             // Additional customizations
-            driver.Manage().Window.Size = new Size(1920, 1080);
+            driver.Manage().Window.Size.Window.Maximize();
             return driver;
         }
     }
