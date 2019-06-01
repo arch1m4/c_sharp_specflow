@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-06-01 07:22:35Z" end-time="2019-06-01 07:22:54Z" duration="18.782219">
+  <command-line><![CDATA[nunit3-console.exe  C:\Users\ap\source\repos\sharp_sele2\sharp_sele2\bin\Debug\sharp_sele2.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1004" name="sharp_sele2.dll" fullname="C:\Users\ap\source\repos\sharp_sele2\sharp_sele2\bin\Debug\sharp_sele2.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-06-01 07:22:36Z" end-time="2019-06-01 07:22:54Z" duration="18.004034" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17134.0" platform="Win32NT" cwd="C:\Users\ap\source\repos\sharp_sele2\packages\NUnit.ConsoleRunner.3.10.0\tools" machine-name="AP-DESK" user="ap" user-domain="ap-desk" culture="zh-TW" uiculture="en-GB" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\ap\source\repos\sharp_sele2\packages\NUnit.ConsoleRunner.3.10.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="7940" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1005" name="sharp_sele2" fullname="sharp_sele2" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-06-01 07:22:36Z" end-time="2019-06-01 07:22:54Z" duration="17.981964" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+      <test-suite type="TestFixture" id="0-1000" name="Home_F_1Feature" fullname="sharp_sele2.Home_F_1Feature" classname="sharp_sele2.Home_F_1Feature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-06-01 07:22:36Z" end-time="2019-06-01 07:22:54Z" duration="17.978458" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+        <properties>
+          <property name="Description" value="home_f_1" />
+        </properties>
+        <output><![CDATA[-> Using default config
+]]></output>
+        <test-suite type="ParameterizedMethod" id="0-1003" name="ClickHomeMenus" fullname="sharp_sele2.Home_F_1Feature.ClickHomeMenus" classname="sharp_sele2.Home_F_1Feature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-06-01 07:22:36Z" end-time="2019-06-01 07:22:54Z" duration="17.630167" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <properties>
+            <property name="Description" value="Click home menus" />
+            <property name="Category" value="mytag" />
+          </properties>
+          <test-case id="0-1001" name="ClickHomeMenus(&quot;Aged Care Homes&quot;,&quot;Find your nearest Bupa Aged Care home&quot;,null)" fullname="sharp_sele2.Home_F_1Feature.ClickHomeMenus(&quot;Aged Care Homes&quot;,&quot;Find your nearest Bupa Aged Care home&quot;,null)" methodname="ClickHomeMenus" classname="sharp_sele2.Home_F_1Feature" runstate="Runnable" seed="621298001" result="Passed" start-time="2019-06-01 07:22:36Z" end-time="2019-06-01 07:22:45Z" duration="9.109770" asserts="1">
+            <output><![CDATA[Given I am on home page
+-> done: Home_F_1Steps.GivenIAmOnHomePage() (3.7s)
+And I click on menu Aged Care Homes
+-> done: Home_F_1Steps.GivenIClickOnMenu("Aged Care Homes") (0.3s)
+Then I should see menu conains Find your nearest Bupa Aged Care home
+-> done: Home_F_1Steps.ThenIShouldSeeMenuConains("Find your nearest...") (0.1s)
+]]></output>
+          </test-case>
+          <test-case id="0-1002" name="ClickHomeMenus(&quot;Dental&quot;,&quot;Find a Bupa owned dental clinic&quot;,null)" fullname="sharp_sele2.Home_F_1Feature.ClickHomeMenus(&quot;Dental&quot;,&quot;Find a Bupa owned dental clinic&quot;,null)" methodname="ClickHomeMenus" classname="sharp_sele2.Home_F_1Feature" runstate="Runnable" seed="1010604988" result="Passed" start-time="2019-06-01 07:22:45Z" end-time="2019-06-01 07:22:54Z" duration="8.514055" asserts="1">
+            <output><![CDATA[Given I am on home page
+-> done: Home_F_1Steps.GivenIAmOnHomePage() (3.9s)
+And I click on menu Dental
+-> done: Home_F_1Steps.GivenIClickOnMenu("Dental") (0.3s)
+Then I should see menu conains Find a Bupa owned dental clinic
+-> done: Home_F_1Steps.ThenIShouldSeeMenuConains("Find a Bupa owned...") (0.1s)
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
