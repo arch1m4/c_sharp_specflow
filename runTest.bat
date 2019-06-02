@@ -1,1 +1,1 @@
-%~dp0\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit3-console.exe  %~dp0\SharpSele2\bin\Debug\SharpSele.dll
+%~dp0\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit3-console.exe  %~dp0\sharp_sele2\bin\Debug\SharpSele.dll
