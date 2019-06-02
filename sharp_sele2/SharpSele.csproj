@@ -9,8 +9,8 @@
     <ProjectGuid>{16FC0486-7FCF-44BE-B518-3E6DCEF6096F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>sharp_sele2</RootNamespace>
-    <AssemblyName>sharp_sele2</AssemblyName>
+    <RootNamespace>SharpSele</RootNamespace>
+    <AssemblyName>SharpSele</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -70,14 +70,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home_F_1Steps.cs" />
+    <Compile Include="HomeF1Steps.cs" />
     <Compile Include="PageObjests\BasePage.cs" />
     <Compile Include="PageObjests\BrowserDriver.cs" />
     <Compile Include="PageObjests\HomePage.cs" />
+    <Compile Include="PageObjests\HomePageLocator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="home_f_1.feature" />
+    <None Include="HomeF1.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

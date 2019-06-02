@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Threading;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
+using SharpSele.PageObjests;
 
-namespace sharp_sele2.PageObjests
+namespace SharpSele.PageObjests
 {
-    class HomePageLocator
-    {
-        // Page element locator should go here
-        public static By menuAgeCare = By.Id("tab-52935a4d-064c-4a3c-9cbb-4f065960027f");
-        public static By menuDetal = By.Id("tab-379a2db1-9086-411d-9708-79238015e016");
-        public static By activeQuickLink = By.CssSelector("div[class='tab-pane is-active'] div.quick-links");
-    }
     class HomePage : BasePage
     {
         public HomePage(IWebDriver driver) : base(driver)

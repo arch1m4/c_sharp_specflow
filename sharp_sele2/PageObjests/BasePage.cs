@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using System;
 
-namespace sharp_sele2.PageObjests
+namespace SharpSele.PageObjests
 {
-    class BasePage
+    public class BasePage
     {
         // Variable and functions shared for all pages goes here
 

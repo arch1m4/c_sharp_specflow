@@ -1,11 +1,11 @@
-﻿Feature: home_f_1
+﻿Feature: HomeF1
 	Test home page menu
 
 @mytag
 Scenario Outline: Click home menus
 	Given I am on home page
 	And I click on menu <menu>
-	Then I should see menu conains <text>
+	Then I should see menu contains <text>
 
 	Examples: 
 	| menu            | text                                  |

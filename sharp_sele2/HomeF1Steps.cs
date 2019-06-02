@@ -1,13 +1,13 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
-using sharp_sele2.PageObjests;
+using SharpSele.PageObjests;
 using NUnit.Framework;
 
-namespace sharp_sele2
+namespace SharpSele
 {
     [Binding]
-    public class Home_F_1Steps
+    public class HomeF1Steps
     {
         // TODO: should add context objects to manage test status
         private IWebDriver driver;
@@ -33,7 +33,7 @@ namespace sharp_sele2
             page.ClickMenu(menu);
         }
         
-        [Then(@"I should see menu conains (.*)")]
+        [Then(@"I should see menu contains (.*)")]
         public void ThenIShouldSeeMenuConains(string content)
         {
             String activeText = page.GetActiveContent();
