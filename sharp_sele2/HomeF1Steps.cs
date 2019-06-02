@@ -43,7 +43,7 @@ namespace SharpSele
         [AfterScenario]
         public void ScenarioTearDown()
         {
-            driver.Close();
+            driver.Quit();
         }
     }
 }
