@@ -15,12 +15,6 @@ namespace sharp_sele2.PageObjests
         public IWebDriver GetDriver()
         {
             IWebDriver driver;
-            // Default to Firefox driver
-            var firefoxOptions = new FirefoxOptions();
-            //firefoxOptions.AddArguments(new List<string>() { "no-sandbox", "headless", "disable-gpu" });
-            // FirefoxDriverService FFService = FirefoxDriverService.CreateDefaultService();
-            driver = new FirefoxDriver(firefoxOptions);
-
             // Get environment varaible for browser type
             String driverType = System.Environment.GetEnvironmentVariable("SELENIUM_DRIVER_TYPE");
             if (driverType == "Chrome")
@@ -35,10 +29,18 @@ namespace sharp_sele2.PageObjests
                 String URI = System.Environment.GetEnvironmentVariable("SELENIUM_GRID_URI");
                 driver = new RemoteWebDriver(new Uri(URI), options.ToCapabilities());
             }
-            
-
+            else
+            {
+                // Default to Firefox driver
+                var firefoxOptions = new FirefoxOptions();
+                // TODO: add headless arg so the test scripts can be run in UIless env such as Docker
+                // firefoxOptions.AddArguments(new List<string>() { "no-sandbox", "headless", "disable-gpu" });
+                // FirefoxDriverService FFService = FirefoxDriverService.CreateDefaultService();
+                driver = new FirefoxDriver(firefoxOptions);
+            }
             // Additional customizations
             driver.Manage().Window.Maximize();
+
             return driver;
         }
     }

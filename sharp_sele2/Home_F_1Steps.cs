@@ -9,7 +9,7 @@ namespace sharp_sele2
     [Binding]
     public class Home_F_1Steps
     {
-        // TODO: should add context object to manage status
+        // TODO: should add context objects to manage test status
         private IWebDriver driver;
         private static HomePage page;
 
